@@ -4,3 +4,11 @@ body {
 	background-color: BlanchedAlmond;
 	padding: 0.2em;
 }
+
+q {
+	color: #ff0000;
+	font-size: large;
+	font-weight: bold;
+	font-family: cursive;
+	font-style: italic;
+}
