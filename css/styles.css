@@ -1,3 +1,6 @@
 ul {list-style-type: circle;}
 ol {list-style-type: lower-roman;}
-body {background-color: BlanchedAlmond}
+body {
+	background-color: BlanchedAlmond;
+	padding: 0.2em;
+}
