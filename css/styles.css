@@ -21,10 +21,20 @@ q {
 	font-style: italic;
 }
 
-p{
+p {
 	color: #2d1332;
 	font-size: large;
 	font-weight: bold;
 	font-family: cursive;
 	font-style: italic;
+}
+
+h1,h3 {
+	color: #240f28;
+	font-weight: bolder;
+	font-size: x-large;
+	font-style: italic;
+}
+h3 {
+	font-size: large;
 }
