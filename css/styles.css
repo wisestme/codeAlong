@@ -58,14 +58,16 @@ th {
 	color: #842924;
 }
 
-tr {
+td {
 	text-align: center;
 	color: #240f28;
+	border: 2px solid red;
+	padding: 1.2em;
 }
 
 table {
 	width: 96%;
 	text-align: center;
-	border: 3;
-	padding: 2.5em;
+	border: 3px solid;
+	padding: 2em;
 }
