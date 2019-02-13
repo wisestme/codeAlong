@@ -62,3 +62,10 @@ tr {
 	text-align: center;
 	color: #240f28;
 }
+
+table {
+	width: 96%;
+	text-align: center;
+	border: 3;
+	padding: 2.5em;
+}
