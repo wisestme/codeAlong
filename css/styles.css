@@ -29,7 +29,7 @@ p {
 	font-style: italic;
 }
 
-h1,h3,h4 {
+h1,h3,h4,caption {
 	color: #240f28;
 	font-weight: bolder;
 	font-size: x-large;
