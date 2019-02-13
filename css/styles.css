@@ -42,7 +42,14 @@ h4 {
 	font-size: larger;
 }
 
-ul li {
+ul > li {
+	color: #240f28;
+	font-weight: bolder;
+	border: 2px solid red;
+}
+
+
+dl dt, dl dd {
 	color: #240f28;
 	font-weight: bolder;
 }
