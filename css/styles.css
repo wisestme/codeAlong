@@ -29,12 +29,15 @@ p {
 	font-style: italic;
 }
 
-h1,h3 {
+h1,h3,h4 {
 	color: #240f28;
 	font-weight: bolder;
 	font-size: x-large;
 	font-style: italic;
 }
-h3 {
+h3, {
 	font-size: large;
+
+h4 {
+	font-size: larger;
 }
