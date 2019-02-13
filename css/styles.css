@@ -53,3 +53,12 @@ dl dt, dl dd {
 	color: #240f28;
 	font-weight: bolder;
 }
+
+th {
+	color: #842924;
+}
+
+tr {
+	text-align: center;
+	color: #240f28;
+}
