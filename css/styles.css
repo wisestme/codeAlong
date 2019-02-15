@@ -84,3 +84,8 @@ footer {
 	text-align: center;
 	padding: 1.5em;
 }
+
+a:hover {
+	color: #732228;
+	font-size: larger;
+}
