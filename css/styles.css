@@ -69,3 +69,14 @@ table {
 	border: 3;
 	padding: 2.5em;
 }
+
+footer {
+	width: 80%;
+	color: #793486;
+	font-size: large;
+	font-weight: bold;
+	font-style: italic;
+	font-family: cursive;
+	text-align: center;
+	padding: 1.5em;
+}
