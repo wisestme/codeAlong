@@ -71,3 +71,19 @@ table {
 	border: 3px solid;
 	padding: 2em;
 }
+
+nav li {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	padding-left: 1.5em;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav {
+	width: 98%;
+	text-align: center;
+}
