@@ -57,6 +57,7 @@ dl dt, dl dd {
 
 th {
 	color: #842924;
+	padding: 0.2em;
 }
 
 td {
@@ -66,9 +67,14 @@ td {
 	padding: 1.2em;
 }
 
+td {
+	padding: 0.2em;
+}
+
 table {
 	width: 96%;
 	text-align: center;
+<<<<<<< HEAD
 	border: 3px solid;
 	padding: 2em;
 }
@@ -101,3 +107,27 @@ footer {
 	font-size: larger;
 	font-weight: bolder;
 }
+||||||| merged common ancestors
+	border: 3;
+	padding: 2.5em;
+}
+=======
+	border: 3;
+}
+
+footer {
+	width: 80%;
+	color: #793486;
+	font-size: large;
+	font-weight: bold;
+	font-style: italic;
+	font-family: cursive;
+	text-align: center;
+	padding: 1.5em;
+}
+
+a:hover {
+	color: #732228;
+	font-size: larger;
+}
+>>>>>>> 2776b66500e4c644699a8cadd62eb71e574f0c8c
