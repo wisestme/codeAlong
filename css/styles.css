@@ -2,7 +2,8 @@ ul {list-style-type: circle;}
 ol {list-style-type: lower-roman;}
 body {
 	background-color: transparent;
-	padding: 0.2em;
+	padding: 0;
+	margin: 0;
 }
 
 q {
@@ -88,6 +89,15 @@ nav {
 	text-align: center;
 }
 
-marquee {
-	behaviour
+footer {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	background: red;
+	bottom: 0;
+	padding: 2px;
+	text-align: center;
+	color: #fff;
+	font-size: larger;
+	font-weight: bolder;
 }
