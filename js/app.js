@@ -10,12 +10,31 @@ if(ans === "SOLOMON") {
 }
 */
 
-let randomNumber = Math.round(Math.random() * 5);
+/*
+let randomNumber = Math.round(Math.random() * 20);
 
-if(randomNumber % 3 === 0){
+if(randomNumber % 3 === 0 && randomNumber !== 0){
+	alert('fizz');
+}else if(randomNumber % 5 === 0 && randomNumber !== 0) {
+	alert('buzz');
+}else if(randomNumber % 3 === 0 && randomNumber % 5 === 0) {
+	alert('fizzbuzz');
+} else {
+	alert(randomNumber);
+}
+*/
+let randomNumber = Math.round(Math.random() * 20);
+
+if(randomNumber !== 0){
+	if(randomNumber % 3 === 0 && randomNumber % 5 === 0) {
+	alert('fizzbuzz');
+} else if(randomNumber % 3 === 0){
 	alert('fizz');
 }else if(randomNumber % 5 === 0) {
 	alert('buzz');
-} else {
+} else{
 	alert(randomNumber);
+}
+} else{
+	alert(0);
 }
