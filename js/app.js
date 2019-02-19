@@ -40,6 +40,7 @@ if(randomNumber !== 0){
 	alert(0);
 }
 */
+/*
 let bestFood = prompt('what is your favourite food ?').toLowerCase();
 let addOn = 'is my most favourite';
 
@@ -62,4 +63,20 @@ switch(bestFood) {
 	default:
 	alert('are you human?');
 	break;
+}
+*/
+for(let i = 0; i < 20; i++) {
+	if(i !== 0) {
+		if(i % 5 === 0 && i % 3 ===0) {
+		alert('fizzbuzz');
+	} else if(i % 3 === 0) {
+		alert('fizz');
+	} else if(i % 5 ===0) {
+		alert('buzz');
+	} else {
+		alert(i);
+	}
+	} else {
+		alert(i);
+	}	
 }
