@@ -40,17 +40,17 @@ if(randomNumber !== 0){
 	alert(0);
 }
 */
-let bestFood = prompt('what is your favourite food ?');
+let bestFood = prompt('what is your favourite food ?').toLowerCase();
 let addOn = 'is my most favourite';
 
 switch(bestFood) {
-	case "Oha Soup":
+	case "oha Soup":
 	alert(bestFood + " " + addOn);
 	break;
-	case "Olugbu":
+	case "olugbu":
 	alert(bestFood + " " + addOn);
 	break;
-	case "Okazi":
+	case "okazi":
 	alert(bestFood + " " + addOn);
 	break;
 	case "beans":
