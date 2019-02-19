@@ -74,9 +74,9 @@ td {
 table {
 	width: 96%;
 	text-align: center;
-
 	border: 3px solid;
 	padding: 2em;
+	margin-bottom: 4em;
 }
 
 nav li {
