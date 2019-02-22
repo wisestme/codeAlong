@@ -211,7 +211,8 @@ function fizzbuzz() {
 }
 */
 
-function squareArea(side) {
-	alert(side * side);
+function rectangleArea(length, width) {
+	alert(length * width);
 }
-squareArea(5);
+rectangleArea(5, 3);
+rectangleArea(2, 1);
