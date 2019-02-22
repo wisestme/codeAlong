@@ -107,6 +107,7 @@ for(let i = 0; i < 20; i++) {
 	}	
 } 
 */
+/*
 let i = 0;
 do {
 	switch(true){
@@ -132,3 +133,48 @@ do {
 	}
 	i++;	
 } while (i<20);
+*/
+/*let i = 0;
+while(i < 20) {
+	switch(true){
+		case(i !== 0):
+		switch(true){
+			case (i % 5 === 0 && i % 3 === 0):
+			alert('fizzbuzz');
+			break;
+			case (i % 3 === 0):
+			alert('fizz');
+			break;
+			case (i % 5 === 0):
+			alert('buzz');
+			break;
+			default:
+			alert(i);
+			break;
+		} 
+		break;
+		default:
+		alert(i);
+		break;
+	}
+	i++
+}
+*/
+
+/*let  name = "Wise";
+alert("hello " + name);
+
+name = "CHIJIOKE"
+alert("hello " + name);
+
+name = "Funmi";
+alert("hello " + name);
+*/
+//let name;
+function greetFriend(name) {
+	alert("hello " + name);
+}
+
+greetFriend('John');
+greetFriend('James');
+greetFriend('Juliet');
