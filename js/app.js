@@ -171,10 +171,41 @@ name = "Funmi";
 alert("hello " + name);
 */
 //let name;
-function greetFriend(name) {
-	alert("hello " + name);
+
+function greetFriend(name1, name2) {
+	alert("hello " + name1 + " and " + name2);
 }
 
-greetFriend('John');
+greetFriend('John', 'James');
 greetFriend('James');
 greetFriend('Juliet');
+greetFriend();
+
+
+/*
+function fizzbuzz() {
+	for(let i = 0; i < 20; i++) {
+	switch(true){
+		case(i !== 0):
+		switch(true){
+			case (i % 5 === 0 && i % 3 === 0):
+			alert('fizzbuzz');
+			break;
+			case (i % 3 === 0):
+			alert('fizz');
+			break;
+			case (i % 5 === 0):
+			alert('buzz');
+			break;
+			default:
+			alert(i);
+			break;
+		} 
+		break;
+		default:
+		alert(i);
+		break;
+	}	
+} 
+}
+*/
