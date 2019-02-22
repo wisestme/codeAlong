@@ -172,6 +172,7 @@ alert("hello " + name);
 */
 //let name;
 
+/*
 function greetFriend(name1, name2) {
 	alert("hello " + name1 + " and " + name2);
 }
@@ -180,7 +181,7 @@ greetFriend('John', 'James');
 greetFriend('James');
 greetFriend('Juliet');
 greetFriend();
-
+*/
 
 /*
 function fizzbuzz() {
@@ -209,3 +210,8 @@ function fizzbuzz() {
 } 
 }
 */
+
+function squareArea(side) {
+	alert(side * side);
+}
+squareArea(5);
