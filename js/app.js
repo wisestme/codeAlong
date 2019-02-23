@@ -224,3 +224,5 @@ alert(colleagues);
 alert(colleagues[1]);
 colleagues.push("Victoria");
 alert(colleagues);
+colleagues.push("Steven", "Itunu", "Esther");
+alert(colleagues);
