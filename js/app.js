@@ -211,8 +211,16 @@ function fizzbuzz() {
 }
 */
 
+/*
 function rectangleArea(length, width) {
 	alert(length * width);
 }
 rectangleArea(5, 3);
 rectangleArea(2, 1);
+*/
+
+let colleagues = ["Nnamdi", "Emmanuel", "Funmi" ];
+alert(colleagues);
+alert(colleagues[1]);
+colleagues.push("Victoria");
+alert(colleagues);
