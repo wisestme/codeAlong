@@ -227,9 +227,9 @@ alert(colleagues);
 colleagues.push("Steven", "Itunu", "Esther");
 alert(colleagues);
 
-function greetColleagues(){
-	for(let i = 0; (i < colleagues.length - 1); i++){
-	alert("Hi " + colleagues[i])
+function greetColleagues(friend){
+	for(let i = 0; (i < colleagues.length); i++){
+	alert("Hi " + friend +" and " + colleagues[i])
 }
 }
-greetColleagues();
+greetColleagues("Marvellous");
