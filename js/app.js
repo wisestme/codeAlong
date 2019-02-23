@@ -236,6 +236,7 @@ function greetColleagues(friend){
 greetColleagues("Marvellous");
 */
 
+/*
 let myCar = {
 	color: "red",
 	brand: "Rolls",
@@ -252,3 +253,30 @@ let myCar = {
 };
 myCar.ignitionOn = false;
 myCar.startEngine();
+*/
+
+let myAirconditioner = {
+	brand: "Samsung",
+	type: "split",
+	model: "triangular",
+	year: 2017,
+	state: "OFF",
+	setTemperature: 23,
+	roomTemperature: 24,
+
+	turnOn: function(){
+		if(myAirconditioner.state === "OFF"){
+			state = "ON";
+			if(myAirconditioner.roomTemperature >= 25){
+				myAirconditioner.setTemperature = 16;
+				alert("your AC has been turned ON and cooling is in progress");
+			} else {
+				alert("your AC has been turned ON")
+			}
+			
+		}
+	}
+}
+
+myAirconditioner.roomTemperature = 20;
+myAirconditioner.turnOn();
