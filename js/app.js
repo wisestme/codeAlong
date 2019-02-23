@@ -219,6 +219,7 @@ rectangleArea(5, 3);
 rectangleArea(2, 1);
 */
 
+/*
 let colleagues = ["Nnamdi", "Emmanuel", "Funmi" ];
 alert(colleagues);
 alert(colleagues[1]);
@@ -233,3 +234,13 @@ function greetColleagues(friend){
 }
 }
 greetColleagues("Marvellous");
+*/
+
+let myCar = {
+	color: "red",
+	brand: "Rolls",
+	model: "Phantom",
+	year: 2019,
+	automatic: true,
+};
+alert(myCar.year);
