@@ -242,5 +242,13 @@ let myCar = {
 	model: "Phantom",
 	year: 2019,
 	automatic: true,
+	ignitionOn: true,
+	startEngine: function(){
+		if(myCar.ignitionOn === false){
+			myCar.ignitionOn = true;
+			alert("your car engine has been started");
+		}
+	}
 };
-alert(myCar.year);
+myCar.ignitionOn = false;
+myCar.startEngine();
