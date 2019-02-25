@@ -282,6 +282,7 @@ let myAirconditioner = {
 myAirconditioner.roomTemperature = 20;
 myAirconditioner.turnOn();
 */
+/*
 function Fridge(brand, type, capacity) {
 	this.brand= brand;
 	this.type= type;
@@ -293,3 +294,14 @@ let hisense = new Fridge("Hisense", "Double door", 100);
 let thermocool = new Fridge("Thermocool", "Table Top", 50);
 
 alert(hisense.capacity);
+*/
+
+function Phone(brand, software, networkMode) {
+	this.brand = brand;
+	this.software = software;
+	this.network = networkMode;
+}
+
+let galaxy = new Phone("Samsung", "Android", "5");
+
+alert("I use a " + galaxy.brand + " " + galaxy.software + " " + galaxy.network  + "G Phone");
