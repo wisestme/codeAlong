@@ -220,6 +220,7 @@ rectangleArea(2, 1);
 */
 
 /*
+//function to greet colleagues array
 let colleagues = ["Nnamdi", "Emmanuel", "Funmi" ];
 alert(colleagues);
 alert(colleagues[1]);
@@ -237,6 +238,7 @@ greetColleagues("Marvellous");
 */
 
 /*
+car object with method
 let myCar = {
 	color: "red",
 	brand: "Rolls",
@@ -256,6 +258,7 @@ myCar.startEngine();
 */
 
 /*
+// airconditioner object with method
 let myAirconditioner = {
 	brand: "Samsung",
 	type: "split",
@@ -283,6 +286,7 @@ myAirconditioner.roomTemperature = 20;
 myAirconditioner.turnOn();
 */
 /*
+// fridge constructor
 function Fridge(brand, type, capacity) {
 	this.brand= brand;
 	this.type= type;
@@ -295,7 +299,7 @@ let thermocool = new Fridge("Thermocool", "Table Top", 50);
 
 alert(hisense.capacity);
 */
-
+// Phone constructor
 function Phone(brand, software, networkMode) {
 	this.brand = brand;
 	this.software = software;
