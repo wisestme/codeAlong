@@ -255,6 +255,7 @@ myCar.ignitionOn = false;
 myCar.startEngine();
 */
 
+/*
 let myAirconditioner = {
 	brand: "Samsung",
 	type: "split",
@@ -280,3 +281,15 @@ let myAirconditioner = {
 
 myAirconditioner.roomTemperature = 20;
 myAirconditioner.turnOn();
+*/
+function Fridge(brand, type, capacity) {
+	this.brand= brand;
+	this.type= type;
+	this.capacity= capacity;
+}
+
+let samsungSideBySide = new Fridge("Samsung", "Side by side", 200);
+let hisense = new Fridge("Hisense", "Double door", 100);
+let thermocool = new Fridge("Thermocool", "Table Top", 50);
+
+alert(hisense.capacity);
