@@ -311,11 +311,13 @@ let galaxy = new Phone("Samsung", "Android", "5");
 
 alert("I use a " + galaxy.brand + " " + galaxy.software + " " + galaxy.network  + "G Phone");
 */
-let example = "value";
+// Blackjack Game
+// wisest code along with Mark Zamoyta
 
-function alertExample(){
-	alert(example);
-	let anotherExample = "?"
-}
-alertExample();
-alert(anotherExample);
+let card1 = "Ace of Spades",
+	card2 = "Ten of Hearts";
+
+	alert("Welcome to Blackjack!");
+	alert("You are dealt: ");
+	alert(" " + card1);
+	alert(" " + card2);
