@@ -314,6 +314,7 @@ alert("I use a " + galaxy.brand + " " + galaxy.software + " " + galaxy.network  
 // Blackjack Game
 // wisest code along with Mark Zamoyta
 
+/*
 let card1 = "Ace of Spades",
 	card2 = "Ten of Hearts";
 
@@ -321,3 +322,8 @@ let card1 = "Ace of Spades",
 	alert("You are dealt: ");
 	alert(" " + card1);
 	alert(" " + card2);
+	alert(typeof(card1));
+	*/
+	let cities = ["Lagos", "Abuja", "Benin", "Ibadan"];
+
+	alert(cities.length);
