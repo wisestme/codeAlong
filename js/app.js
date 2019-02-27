@@ -328,4 +328,5 @@ let card1 = "Ace of Spades",
 		cities.push("Aba");
 		cities.push("Calabar");
 		cities.pop();
+		cities.shift();
 	alert(cities);
