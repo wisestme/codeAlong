@@ -325,5 +325,6 @@ let card1 = "Ace of Spades",
 	alert(typeof(card1));
 	*/
 	let cities = ["Lagos", "Abuja", "Benin", "Ibadan"];
-
-	alert(cities.length);
+		cities.push("Aba");
+		cities.push("Calabar");
+	alert(cities);
