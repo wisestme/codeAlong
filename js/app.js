@@ -327,6 +327,5 @@ let card1 = "Ace of Spades",
 	let cities = ["Lagos", "Abuja", "Benin", "Ibadan"];
 		cities.push("Aba");
 		cities.push("Calabar");
-		cities.pop();
-		cities.shift();
+		cities.splice(1, 1, "Kano");
 	alert(cities);
