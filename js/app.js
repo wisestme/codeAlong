@@ -346,6 +346,7 @@ let card1 = "Ace of Spades",
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + playerCards)
 */
+/*
 let score = 100,
 	bonus,
 	total;
@@ -362,3 +363,22 @@ if (score > 50) {
 total = score + bonus;
 
 alert("your total score with bonus is: " + total);
+*/
+
+let score = 10,
+	bonus,
+	total;
+
+	switch(true) {
+		case score > 50:
+			bonus = score + 10;
+			break;
+		case score > 100:
+			bonus = score + 20;
+			break;
+		default:
+			alert("play again for a score higher than " + score);
+			break;
+	}
+	total = score + bonus;
+	alert("your total score with bonus is: " + total);
