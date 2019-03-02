@@ -346,10 +346,19 @@ let card1 = "Ace of Spades",
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + playerCards)
 */
-let score = 10;
+let score = 100,
+	bonus,
+	total;
 
-if (score < 50) {
-	score = score * 2;
+
+if (score > 50) {
+	 bonus = score + 10;
+} else if (score > 100) {
+	bonus = score + 20;
+} else {
+	bonus = 0;
 }
 
-alert("your score is: " + score);
+total = score + bonus;
+
+alert("your total score with bonus is: " + total);
