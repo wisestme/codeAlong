@@ -332,7 +332,7 @@ let card1 = "Ace of Spades",
 		cities.splice(1, 3, "Kano", "Okigwe", "Lokoja");
 	alert(cities);
 	*/
-
+/*
 	//using array for the Blackjack game
 
 	let deck = [
@@ -345,3 +345,11 @@ let card1 = "Ace of Spades",
 
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + playerCards)
+*/
+let score = 10;
+
+if (score < 50) {
+	score = score * 2;
+}
+
+alert("your score is: " + score);
