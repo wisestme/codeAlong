@@ -324,8 +324,24 @@ let card1 = "Ace of Spades",
 	alert(" " + card2);
 	alert(typeof(card1));
 	*/
+	/*
+	// cities array
 	let cities = ["Lagos", "Abuja", "Benin", "Ibadan"];
 		cities.push("Aba");
 		cities.push("Calabar");
 		cities.splice(1, 3, "Kano", "Okigwe", "Lokoja");
 	alert(cities);
+	*/
+
+	//using array for the Blackjack game
+
+	let deck = [
+			"Ace of Spades",
+			"Two of Spades",
+			"Three of Spades"
+	];
+
+	let playerCards = [deck[0], deck[2]];
+
+	alert("Welcome to Blackjack!");
+	alert("You have been dealt: " + playerCards)
