@@ -386,7 +386,17 @@ let score = 10,
 */
 
 // Simple for loop
-
+/*
 for (let i = 0; i < 8; i++) {
 	alert(i);
+}
+*/
+
+// simple while loop
+
+let count = 0;
+
+while (count < 5) {
+	alert("Jesus is coming soon");
+	count++;
 }	
