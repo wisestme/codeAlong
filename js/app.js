@@ -364,7 +364,7 @@ total = score + bonus;
 
 alert("your total score with bonus is: " + total);
 */
-
+/*
 let score = 10,
 	bonus,
 	total;
@@ -383,3 +383,10 @@ let score = 10,
 	}
 	total = score + bonus;
 	alert("your total score with bonus is: " + total);
+*/
+
+// Simple for loop
+
+for (let i = 0; i < 8; i++) {
+	alert(i);
+}	
