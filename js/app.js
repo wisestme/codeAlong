@@ -377,7 +377,8 @@ let score = 10,
 			bonus = score + 20;
 			break;
 		default:
-			alert("play again for a score higher than " + score);
+			bonus = 0;
+			alert("play again for a score higher score");
 			break;
 	}
 	total = score + bonus;
