@@ -393,10 +393,28 @@ for (let i = 0; i < 8; i++) {
 */
 
 // simple while loop
-
+/*
 let count = 0;
 
 while (count < 5) {
 	alert("Jesus is coming soon");
 	count++;
-}	
+}
+*/
+
+// add loops to Blackjack
+
+let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
+	value = ["Ace", "One", "Two", "Three"],
+	deck = [];
+
+for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++){
+	for (let valueIdx = 0; valueIdx < value.length; valueIdx++) {
+		deck.push(value[valueIdx] + ' of ' + suits[suitsIdx])
+	}
+}
+
+let playerCards = [deck[8], deck[15]];
+
+	alert("Welcome to Blackjack!");
+	alert("You have been dealt: " + playerCards);
