@@ -403,7 +403,7 @@ while (count < 5) {
 */
 
 // add loops to Blackjack
-
+/*
 let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
 	value = ["Ace", "One", "Two", "Three"],
 	deck = [];
@@ -418,3 +418,12 @@ let playerCards = [deck[8], deck[15]];
 
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + playerCards);
+*/
+
+// passing information to function
+function firstFunction(notice){
+	alert(notice);
+}
+
+firstFunction("I m the newest guy in town");
+firstFunction("I m the newester guy in town");
