@@ -420,10 +420,10 @@ let playerCards = [deck[8], deck[15]];
 	alert("You have been dealt: " + playerCards);
 */
 
-// passing information to function
-function firstFunction(notice, anotherNotice){
-	alert(anotherNotice);
+function luckyNumber(numero){
+	let myLuck = numero * 2;
+	return myLuck;
 }
 
-firstFunction("","I m the newest guy in town");
-firstFunction("I m the newester guy in town");
+let result = luckyNumber(4);
+alert(result);
