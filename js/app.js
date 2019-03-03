@@ -421,9 +421,9 @@ let playerCards = [deck[8], deck[15]];
 */
 
 // passing information to function
-function firstFunction(notice){
-	alert(notice);
+function firstFunction(notice, anotherNotice){
+	alert(anotherNotice);
 }
 
-firstFunction("I m the newest guy in town");
+firstFunction("","I m the newest guy in town");
 firstFunction("I m the newester guy in town");
