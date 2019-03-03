@@ -420,11 +420,11 @@ function createDeck(){
 }
 
 // shuffle deck function
-function shuffleDeck(){
+function shuffleDeck() {
 	let i, j,
 		temp = null;
 
-	for (i = deck.length - 1; i > 0; i--){
+	for (i = deck.length - 1; i > 0; i--) {
 		j = Math.floor(Math.random() * (i + 1))
 		temp = deck[i];
 		deck[i] = deck[j];
