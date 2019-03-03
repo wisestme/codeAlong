@@ -403,27 +403,37 @@ while (count < 5) {
 */
 
 // add loops to Blackjack
-/*
+let randomNumber = Math.round(Math.random() * 20);
 let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
-	value = ["Ace", "One", "Two", "Three"],
-	deck = [];
+	value = ["Ace", "One", "Two", "Three"];
+	
 
-for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++){
-	for (let valueIdx = 0; valueIdx < value.length; valueIdx++) {
-		deck.push(value[valueIdx] + ' of ' + suits[suitsIdx])
+// function to create deck
+function createDeck(){
+	let deck = [];
+	for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++){
+		for (let valueIdx = 0; valueIdx < value.length; valueIdx++) {
+			deck.push(value[valueIdx] + ' of ' + suits[suitsIdx])
+		}
 	}
+	return deck;
 }
 
-let playerCards = [deck[8], deck[15]];
+// function to get last card
+function getLastCard(){
+	return deck.pop();
+}
+
+// function to get first card
+function getFirstCard(){
+	return deck.shift();
+}
+
+let deck = createDeck();
+
+let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + playerCards);
-*/
 
-function luckyNumber(numero){
-	let myLuck = numero * 2;
-	return myLuck;
-}
 
-let result = luckyNumber(4);
-alert(result);
