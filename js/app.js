@@ -419,6 +419,18 @@ function createDeck(){
 	return deck;
 }
 
+// shuffle deck function
+function shuffleDeck(){
+	let i, j,
+		temp = null;
+
+	for (i = deck.length - 1; i > 0; i--){
+		j = Math.floor(Math.random() * (i + 1))
+		temp = deck[i];
+		deck[i] = deck[j];
+		deck[j] = temp;
+	}
+}
 // function to get last card
 function getLastCard(){
 	return deck.pop();
@@ -430,6 +442,7 @@ function getFirstCard(){
 }
 
 let deck = createDeck();
+shuffleDeck();
 
 let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
