@@ -402,19 +402,23 @@ while (count < 5) {
 }
 */
 
-/*
+
 // add loops to Blackjack
 let randomNumber = Math.round(Math.random() * 20);
 let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
-	value = ["Ace", "One", "Two", "Three"];
+	values = ["Ace", "One", "Two", "Three"];
 	
 
 // function to create deck
 function createDeck(){
 	let deck = [];
 	for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++){
-		for (let valueIdx = 0; valueIdx < value.length; valueIdx++) {
-			deck.push(value[valueIdx] + ' of ' + suits[suitsIdx])
+		for (let valueIdx = 0; valueIdx < values.length; valueIdx++) {
+			let card = {
+				suits: suits[suitsIdx],
+				values: values[valueIdx]
+			};
+			deck.push(card);
 		}
 	}
 	return deck;
@@ -437,6 +441,11 @@ function getLastCard(){
 	return deck.pop();
 }
 
+// function to get card strings
+function getCardString(card) {
+	return card.values + ' of ' + card.suits;
+}
+
 // function to get first card
 function getFirstCard(){
 	return deck.shift();
@@ -448,37 +457,5 @@ shuffleDeck();
 let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
 	alert("Welcome to Blackjack!");
-	alert("You have been dealt: " + playerCards);
-*/
-
-// a basic object
-let students = [
-	{
-	name: "Wisest",
-	username: "wisestMe",
-	profession: "web developer",
-	religion: "follower of christ",
-	age: 32,
-	married: false
-},
-	{
-	name: "Wisest",
-	username: "wisestMe",
-	profession: "web developer",
-	religion: "follower of christ",
-	age: 32,
-	married: false
-},
-{
-	name: "James",
-	username: "jamees",
-	profession: "web designer",
-	religion: "follower of christ",
-	age: 22,
-	married: false
-}
-];
-
-alert(students[2].profession);
-
+	alert("You have been dealt: " + getCardString(playerCards[1]));
 
