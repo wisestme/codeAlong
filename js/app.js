@@ -461,3 +461,16 @@ let student = {
 	married: false
 };
 
+alert(student.religion);
+alert(student.married);
+function changeMaritalStatus(student) {
+	student.married= true;
+}
+
+changeMaritalStatus(student);
+
+if(student.married) {
+	alert("i m now married");
+}
+
+
