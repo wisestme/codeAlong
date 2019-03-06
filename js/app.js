@@ -402,6 +402,7 @@ while (count < 5) {
 }
 */
 
+/*
 // add loops to Blackjack
 let randomNumber = Math.round(Math.random() * 20);
 let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
@@ -448,5 +449,15 @@ let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + playerCards);
+*/
 
+// a basic object
+let student = {
+	name: "Wisest",
+	username: "wisestMe",
+	profession: "web developer",
+	religion: "follower of christ",
+	age: 32,
+	married: false
+};
 
