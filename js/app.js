@@ -452,25 +452,33 @@ let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 */
 
 // a basic object
-let student = {
+let students = [
+	{
 	name: "Wisest",
 	username: "wisestMe",
 	profession: "web developer",
 	religion: "follower of christ",
 	age: 32,
 	married: false
-};
-
-alert(student.religion);
-alert(student.married);
-function changeMaritalStatus(student) {
-	student.married= true;
+},
+	{
+	name: "Wisest",
+	username: "wisestMe",
+	profession: "web developer",
+	religion: "follower of christ",
+	age: 32,
+	married: false
+},
+{
+	name: "James",
+	username: "jamees",
+	profession: "web designer",
+	religion: "follower of christ",
+	age: 22,
+	married: false
 }
+];
 
-changeMaritalStatus(student);
-
-if(student.married) {
-	alert("i m now married");
-}
+alert(students[2].profession);
 
 
