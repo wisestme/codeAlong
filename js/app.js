@@ -466,3 +466,10 @@ clickMe.addEventListener('click', function() {
 	alert("Welcome to Blackjack!");
 	alert("You have been dealt: " + getCardString(playerCards[1]));
 });
+
+let removeBook = document.getElementById('book_remove');
+let pythonBook = document.getElementById('python_book');
+
+removeBook.addEventListener('click', function(){
+	pythonBook.style.display = 'none';
+});
