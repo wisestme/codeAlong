@@ -456,6 +456,11 @@ shuffleDeck();
 
 let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
-	alert("Welcome to Blackjack!");
-	alert("You have been dealt: " + getCardString(playerCards[1]));
+	//alert("Welcome to Blackjack!");
+	//alert("You have been dealt: " + getCardString(playerCards[1]));
 
+let lorem = document.getElementById('lorem_ipsum');
+let clickMe = document.getElementById('clickme_button');
+clickMe.addEventListener('click', function() {
+	lorem.innerText = "what does Lorem mean?";
+});
