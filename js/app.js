@@ -493,3 +493,9 @@ quit.style.display = 'none';
 restart.style.display = 'none';
 stay.style.display = 'none';
 hit.style.display = 'none';
+
+newGame.addEventListener('click', function(){
+	stay.style.display = 'block';
+	hit.style.display = 'block';
+	newGame.style.display = 'none';
+});
