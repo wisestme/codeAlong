@@ -469,7 +469,12 @@ clickMe.addEventListener('click', function() {
 
 let removeBook = document.getElementById('book_remove');
 let pythonBook = document.getElementById('python_book');
-
+pythonBook.style.display = 'block'
 removeBook.addEventListener('click', function(){
-	pythonBook.style.display = 'none';
+	if(pythonBook.style.display = 'block') {
+		pythonBook.style.display = 'none';
+	}else if(pythonBook.style.display = 'none') {
+		pythonBook.style.display = 'block';
+	}
+	
 });
