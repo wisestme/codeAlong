@@ -478,3 +478,8 @@ removeBook.addEventListener('click', function(){
 	}
 	
 });
+
+let newGame = document.getElementById('new_game');
+let playAgain = document.getElementById('play_again');
+let quit = document.getElementById('quit');
+let restart = document.getElementById('restart');
