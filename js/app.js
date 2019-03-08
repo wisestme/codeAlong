@@ -485,7 +485,11 @@ let newGame = document.getElementById('new_game');
 let playAgain = document.getElementById('play_again');
 let quit = document.getElementById('quit');
 let restart = document.getElementById('restart');
+let stay = document.getElementById('stay');
+let hit = document.getElementById('hit');
 
 playAgain.style.display = 'none';
 quit.style.display = 'none';
 restart.style.display = 'none';
+stay.style.display = 'none';
+hit.style.display = 'none';
