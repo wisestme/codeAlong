@@ -495,7 +495,7 @@ stay.style.display = 'none';
 hit.style.display = 'none';
 
 newGame.addEventListener('click', function(){
-	stay.style.display = 'block';
-	hit.style.display = 'block';
+	stay.style.display = 'inline-block';
+	hit.style.display = 'inline-block';
 	newGame.style.display = 'none';
 });
