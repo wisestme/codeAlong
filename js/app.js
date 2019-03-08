@@ -459,6 +459,7 @@ let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 	//alert("Welcome to Blackjack!");
 	//alert("You have been dealt: " + getCardString(playerCards[1]));
 
+/*
 let lorem = document.getElementById('lorem_ipsum');
 let clickMe = document.getElementById('clickme_button');
 clickMe.addEventListener('click', function() {
@@ -478,8 +479,13 @@ removeBook.addEventListener('click', function(){
 	}
 	
 });
+*/
 
 let newGame = document.getElementById('new_game');
 let playAgain = document.getElementById('play_again');
 let quit = document.getElementById('quit');
 let restart = document.getElementById('restart');
+
+playAgain.style.display = 'none';
+quit.style.display = 'none';
+restart.style.display = 'none';
