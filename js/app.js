@@ -487,6 +487,7 @@ let quit = document.getElementById('quit');
 let restart = document.getElementById('restart');
 let stay = document.getElementById('stay');
 let hit = document.getElementById('hit');
+let textArea = document.getElementById('text_area');
 
 playAgain.style.display = 'none';
 quit.style.display = 'none';
@@ -498,4 +499,5 @@ newGame.addEventListener('click', function(){
 	stay.style.display = 'inline-block';
 	hit.style.display = 'inline-block';
 	newGame.style.display = 'none';
+	textArea.innerText = 'Now playing...';
 });
