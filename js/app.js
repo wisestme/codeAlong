@@ -465,6 +465,7 @@ newGame.addEventListener('click', function(){
 	playerWon = false;
 
 	deck = createDeck();
+	shuffleDeck();
 	playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 	dealerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 	
