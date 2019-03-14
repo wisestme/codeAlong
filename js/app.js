@@ -457,6 +457,22 @@ restart.style.display = 'none';
 stay.style.display = 'none';
 hit.style.display = 'none';
 
+// When new game button is clicked
+newGame.addEventListener('click', function(){
+	gameStarted = true;
+	gameOver = false;
+	playerWon = false;
+
+	deck = createDeck();
+	playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
+	dealerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
+	
+	stay.style.display = 'inline-block';
+	hit.style.display = 'inline-block';
+	newGame.style.display = 'none';
+	textArea.innerText = 'Now playing...';
+});
+
 // function to create deck
 function createDeck(){
 	deck = [];
@@ -499,18 +515,12 @@ function getFirstCard(){
 	return deck.shift();
 }
 
-deck = createDeck();
+
 shuffleDeck();
 
-playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
 
 
 
 
-newGame.addEventListener('click', function(){
-	stay.style.display = 'inline-block';
-	hit.style.display = 'inline-block';
-	newGame.style.display = 'none';
-	textArea.innerText = 'Now playing...';
-});
+
