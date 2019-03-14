@@ -522,7 +522,7 @@ shuffleDeck();
 
 function showStatus(){
 	if(!gameStarted){
-		textArea.innerText = "waiting for Blackjack...";
+		textArea.innerText = "Ready for Blackjack???";
 		return;
 	} else {
 		textArea.innerText = "Blackjack is here!!!";
