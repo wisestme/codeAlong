@@ -430,6 +430,15 @@ removeBook.addEventListener('click', function(){
 let randomNumber = Math.round(Math.random() * 20);
 let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
 	values = ["Ace", "One", "Two", "Three"];
+
+// DOM variables
+let newGame = document.getElementById('new_game');
+let playAgain = document.getElementById('play_again');
+let quit = document.getElementById('quit');
+let restart = document.getElementById('restart');
+let stay = document.getElementById('stay');
+let hit = document.getElementById('hit');
+let textArea = document.getElementById('text_area');
 	
 
 // function to create deck
@@ -479,13 +488,7 @@ shuffleDeck();
 
 let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
-let newGame = document.getElementById('new_game');
-let playAgain = document.getElementById('play_again');
-let quit = document.getElementById('quit');
-let restart = document.getElementById('restart');
-let stay = document.getElementById('stay');
-let hit = document.getElementById('hit');
-let textArea = document.getElementById('text_area');
+
 
 playAgain.style.display = 'none';
 quit.style.display = 'none';
