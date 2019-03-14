@@ -535,14 +535,21 @@ function showStatus(){
 */
 // cards for player
 	let dealerCardString = '';
-	for(let i = 0; i < dealerCards; i++) {
+	for(let i = 0; i < dealerCards.length; i++) {
 		dealerCardString += getCardString(dealerCards[i]) + '\n';
 	}
 
 	let playerCardString = '';
-	for(let i = 0; i < playerCards; i++) {
+	for(let i = 0; i < playerCards.length; i++) {
 		playerCardString += getCardString(playerCards[i]) + '\n';
 	}
+
+	textArea.innerText =
+		'Dealer has:\n' +
+		dealerCardString + '\n\n' +
+
+		'Player has:\n' +
+		playerCardString;
 }
 
 
