@@ -439,11 +439,20 @@ let restart = document.getElementById('restart');
 let stay = document.getElementById('stay');
 let hit = document.getElementById('hit');
 let textArea = document.getElementById('text_area');
-	
+
+// Game variables
+let gameStarted = false,
+	gameOver = false,
+	playerWon = false,
+	dealerCards = [],
+	playerCards = [],
+	dealerScore = 0,
+	playerScore = 0,
+	deck = [];
 
 // function to create deck
 function createDeck(){
-	let deck = [];
+	deck = [];
 	for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++){
 		for (let valueIdx = 0; valueIdx < values.length; valueIdx++) {
 			let card = {
@@ -483,10 +492,10 @@ function getFirstCard(){
 	return deck.shift();
 }
 
-let deck = createDeck();
+deck = createDeck();
 shuffleDeck();
 
-let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
+playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
 
 
