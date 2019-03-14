@@ -450,6 +450,13 @@ let gameStarted = false,
 	playerScore = 0,
 	deck = [];
 
+// Hide buttons not in use
+playAgain.style.display = 'none';
+quit.style.display = 'none';
+restart.style.display = 'none';
+stay.style.display = 'none';
+hit.style.display = 'none';
+
 // function to create deck
 function createDeck(){
 	deck = [];
@@ -499,11 +506,7 @@ playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
 
 
 
-playAgain.style.display = 'none';
-quit.style.display = 'none';
-restart.style.display = 'none';
-stay.style.display = 'none';
-hit.style.display = 'none';
+
 
 newGame.addEventListener('click', function(){
 	stay.style.display = 'inline-block';
