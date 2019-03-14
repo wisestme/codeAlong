@@ -518,6 +518,12 @@ function getFirstCard(){
 
 shuffleDeck();
 
+function showStatus(){
+	if(!gameStarted){
+		textArea.innerText = "waiting for Blackjack";
+	}
+}
+
 
 
 
