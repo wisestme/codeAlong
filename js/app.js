@@ -401,7 +401,30 @@ while (count < 5) {
 	count++;
 }
 */
+	//alert("Welcome to Blackjack!");
+	//alert("You have been dealt: " + getCardString(playerCards[1]));
 
+/*
+let lorem = document.getElementById('lorem_ipsum');
+let clickMe = document.getElementById('clickme_button');
+clickMe.addEventListener('click', function() {
+	lorem.innerText = "what does Lorem mean?";
+	alert("Welcome to Blackjack!");
+	alert("You have been dealt: " + getCardString(playerCards[1]));
+});
+
+let removeBook = document.getElementById('book_remove');
+let pythonBook = document.getElementById('python_book');
+pythonBook.style.display = 'block'
+removeBook.addEventListener('click', function(){
+	if(pythonBook.style.display = 'block') {
+		pythonBook.style.display = 'none';
+	}else if(pythonBook.style.display = 'none') {
+		pythonBook.style.display = 'block';
+	}
+	
+});
+*/
 
 // add loops to Blackjack
 let randomNumber = Math.round(Math.random() * 20);
@@ -455,31 +478,6 @@ let deck = createDeck();
 shuffleDeck();
 
 let playerCards = [getLastCard(), getFirstCard(), deck[randomNumber]];
-
-	//alert("Welcome to Blackjack!");
-	//alert("You have been dealt: " + getCardString(playerCards[1]));
-
-/*
-let lorem = document.getElementById('lorem_ipsum');
-let clickMe = document.getElementById('clickme_button');
-clickMe.addEventListener('click', function() {
-	lorem.innerText = "what does Lorem mean?";
-	alert("Welcome to Blackjack!");
-	alert("You have been dealt: " + getCardString(playerCards[1]));
-});
-
-let removeBook = document.getElementById('book_remove');
-let pythonBook = document.getElementById('python_book');
-pythonBook.style.display = 'block'
-removeBook.addEventListener('click', function(){
-	if(pythonBook.style.display = 'block') {
-		pythonBook.style.display = 'none';
-	}else if(pythonBook.style.display = 'none') {
-		pythonBook.style.display = 'block';
-	}
-	
-});
-*/
 
 let newGame = document.getElementById('new_game');
 let playAgain = document.getElementById('play_again');
