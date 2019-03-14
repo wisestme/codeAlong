@@ -527,6 +527,10 @@ function showStatus(){
 	} else {
 		textArea.innerText = "Blackjack is here!!!";
 	}
+	// display all our cards
+	for (var i = 0; i < deck.length; i++) {
+		textArea.innerText += '\n' + getCardString(deck[i]);
+	}
 }
 
 
