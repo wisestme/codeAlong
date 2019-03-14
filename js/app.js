@@ -527,9 +527,21 @@ function showStatus(){
 	} else {
 		textArea.innerText = "Blackjack is here!!!";
 	}
+/*
 	// display all our cards
 	for (var i = 0; i < deck.length; i++) {
 		textArea.innerText += '\n' + getCardString(deck[i]);
+	}
+*/
+// cards for player
+	let dealerCardString = '';
+	for(let i = 0; i < dealerCards; i++) {
+		dealerCardString += getCardString(dealerCards[i]) + '\n';
+	}
+
+	let playerCardString = '';
+	for(let i = 0; i < playerCards; i++) {
+		playerCardString += getCardString(playerCards[i]) + '\n';
 	}
 }
 
