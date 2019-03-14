@@ -456,6 +456,7 @@ quit.style.display = 'none';
 restart.style.display = 'none';
 stay.style.display = 'none';
 hit.style.display = 'none';
+showStatus();
 
 // When new game button is clicked
 newGame.addEventListener('click', function(){
@@ -470,7 +471,7 @@ newGame.addEventListener('click', function(){
 	stay.style.display = 'inline-block';
 	hit.style.display = 'inline-block';
 	newGame.style.display = 'none';
-	textArea.innerText = 'Now playing...';
+	showStatus();
 });
 
 // function to create deck
@@ -520,7 +521,10 @@ shuffleDeck();
 
 function showStatus(){
 	if(!gameStarted){
-		textArea.innerText = "waiting for Blackjack";
+		textArea.innerText = "waiting for Blackjack...";
+		return;
+	} else {
+		textArea.innerText = "Blackjack is here!!!";
 	}
 }
 
