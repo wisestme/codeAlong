@@ -429,7 +429,7 @@ removeBook.addEventListener('click', function(){
 // add loops to Blackjack
 let randomNumber = Math.round(Math.random() * 20);
 let suits = ["Spade", "King", "Queen", "Heart", "Diamond"],
-	values = ["Ace", "One", "Two", "Three"];
+	values = ["Ace", "One", "Two", "Three", "Four"];
 
 // DOM variables
 let newGame = document.getElementById('new_game');
@@ -517,8 +517,8 @@ function getFirstCard(){
 	return deck.shift();
 }
 
-
-shuffleDeck();
+// assign numeric values to cards
+//shuffleDeck();
 
 function showStatus(){
 	if(!gameStarted){
