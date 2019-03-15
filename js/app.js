@@ -518,6 +518,25 @@ function getFirstCard(){
 }
 
 // assign numeric values to cards
+function getCardNumericValue(card) {
+	switch(card.values) {
+		case "Ace":
+		return 1;
+		break;
+		case "Two":
+		return 2;
+		break;
+		case "Three":
+		return 3;
+		break;
+		case "Four":
+		return 4;
+		break;
+		default:
+		return 10;
+		break;
+	}
+}
 //shuffleDeck();
 
 function showStatus(){
