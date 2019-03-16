@@ -554,6 +554,12 @@ function getScore(cardArray) {
 	}
 	return score;
 }
+
+// function to update score
+function updateScore() {
+	dealerScore = getScore(dealerCards);
+	playerScore = getScore(playerCards);
+}
 //shuffleDeck();
 
 function showStatus(){
@@ -579,6 +585,8 @@ function showStatus(){
 	for(let i = 0; i < playerCards.length; i++) {
 		playerCardString += getCardString(playerCards[i]) + '\n';
 	}
+
+	updateScore();
 
 	textArea.innerText =
 		'Dealer has:\n' +
