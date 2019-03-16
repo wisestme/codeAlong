@@ -590,10 +590,10 @@ function showStatus(){
 
 	textArea.innerText =
 		'Dealer has:\n' +
-		dealerCardString + 'score:' + '\n\n' +
+		dealerCardString + 'score:' + dealerScore + '\n\n' +
 
 		'Player has:\n' +
-		playerCardString + 'score:';
+		playerCardString + 'score:' + playerScore;
 }
 
 
