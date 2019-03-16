@@ -596,6 +596,16 @@ function showStatus(){
 		playerCardString + 'score:' + playerScore;
 }
 
+// winner function
+function whoWins() {
+	if (playerScore === dealerScore){
+		textArea.innerText = "IT'S A TIE";
+	} else if (playerScore > dealerScore) {
+		textArea.innerText = "YOU WON";
+	} else {
+		textArea.innerText = "YOU LOST";
+	}
+}
 
 
 
