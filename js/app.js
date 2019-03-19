@@ -620,7 +620,7 @@ function whoWon() {
 	}
 }
 
-function gameOver () {
+function theEnd () {
 	if (playerWon) {
 		innerText.textArea = "YOU WIN. Congratulations!!!"
 	} else if (noWinner) {
