@@ -610,12 +610,24 @@ function whoWins() {
 	}
 }
 */
-if(playerScore > dealerScore) {
-	playerWon = true;
-} else if (playerScore === dealerScore) {
-	noWinner = true;
-} else {
-	playerLost = true;
+function whoWon() {
+	if(playerScore > dealerScore) {
+		playerWon = true;
+	} else if (playerScore === dealerScore) {
+		noWinner = true;
+	} else {
+		playerLost = true;
+	}
+}
+
+function gameOver () {
+	if (playerWon) {
+		innerText.textArea = "YOU WIN. Congratulations!!!"
+	} else if (noWinner) {
+		innerText.textArea = "Its a draw."
+	} else {
+		innerText.textArea = "You lost. Sorry!!!"
+	}
 }
 
 
