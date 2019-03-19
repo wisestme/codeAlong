@@ -479,7 +479,9 @@ newGame.addEventListener('click', function(){
 
 // when hit button is clicked
 hit.addEventListener('click', function() {
-
+	shuffleDeck();
+	playerCards.push(deck[randomNumber]);
+	showStatus();
 })
 
 // when stay button is clicked
