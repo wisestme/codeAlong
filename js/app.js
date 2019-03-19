@@ -630,6 +630,12 @@ function theEnd () {
 	}
 }
 
+function showWinner () {
+	if (player score > 21 || dealerScore > 21) {
+		theEnd();
+	}
+}
+
 
 
 
