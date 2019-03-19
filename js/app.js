@@ -477,6 +477,16 @@ newGame.addEventListener('click', function(){
 	showStatus();
 });
 
+// when hit button is clicked
+hit.addEventListener('click', function() {
+
+})
+
+// when stay button is clicked
+stay.addEventListener('click', function() {
+	whoWon();
+	theEnd();
+})
 // function to create deck
 function createDeck(){
 	deck = [];
@@ -622,17 +632,24 @@ function whoWon() {
 
 function theEnd () {
 	if (playerWon) {
-		innerText.textArea = "YOU WIN. Congratulations!!!"
+		textArea.innerText = "YOU WIN. Congratulations!!!"
 	} else if (noWinner) {
-		innerText.textArea = "Its a draw."
+		textArea.innerText = "Its a draw."
 	} else {
-		innerText.textArea = "You lost. Sorry!!!"
+		textArea.innerText = "You lost. Sorry!!!"
 	}
 }
 
 function showWinner () {
-	if (player score > 21 || dealerScore > 21) {
+	if ((playerScore > 21) || (dealerScore > 21)) {
 		theEnd();
+	}
+	if(playerScore > 21 && dealerScore <= 21) {
+		playerWon = false;
+	} else if (dealerScore > 21 && playerScore <= 21) {
+		dealerWon = false;
+	} else {
+		noWinner = true;
 	}
 }
 
