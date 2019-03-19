@@ -638,11 +638,11 @@ function whoWon() {
 
 function theEnd () {
 	if (playerWon) {
-		textArea.innerText = "YOU WIN. Congratulations!!!"
+		textArea.innerText += "YOU WIN. Congratulations!!!"
 	} else if (noWinner) {
-		textArea.innerText = "Its a draw."
+		textArea.innerText += "Its a draw."
 	} else {
-		textArea.innerText = "You lost. Sorry!!!"
+		textArea.innerText += "You lost. Sorry!!!"
 	}
 }
 
