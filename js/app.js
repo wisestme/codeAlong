@@ -655,6 +655,13 @@ function showWinner () {
 	}
 }
 
+function giveDealerCard () {
+	if (playerScore < 21) {
+		shuffleDeck()
+		dealerCards.push(deck[randomNumber);
+	}
+}
+
 
 
 
