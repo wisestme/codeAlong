@@ -482,6 +482,10 @@ hit.addEventListener('click', function() {
 	shuffleDeck();
 	playerCards.push(deck[randomNumber]);
 	showStatus();
+	shuffleDeck();
+	giveDealerCard();
+	showStatus();
+	showWinner ();
 })
 
 // when stay button is clicked
@@ -658,7 +662,7 @@ function showWinner () {
 function giveDealerCard () {
 	if (playerScore < 21) {
 		shuffleDeck()
-		dealerCards.push(deck[randomNumber);
+		dealerCards.push(deck[randomNumber]);
 	}
 }
 
