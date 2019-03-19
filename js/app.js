@@ -444,6 +444,8 @@ let textArea = document.getElementById('text_area');
 let gameStarted = false,
 	gameOver = false,
 	playerWon = false,
+	noWinner = false,
+	playerLost = false;
 	dealerCards = [],
 	playerCards = [],
 	dealerScore = 0,
@@ -596,6 +598,7 @@ function showStatus(){
 		playerCardString + 'score:' + playerScore;
 }
 
+/*
 // winner function
 function whoWins() {
 	if (playerScore === dealerScore){
@@ -606,8 +609,14 @@ function whoWins() {
 		textArea.innerText = "YOU LOST";
 	}
 }
-
-
+*/
+if(playerScore > dealerScore) {
+	playerWon = true;
+} else if (playerScore === dealerScore) {
+	noWinner = true;
+} else {
+	playerLost = true;
+}
 
 
 
